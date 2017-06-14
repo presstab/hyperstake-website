@@ -1,23 +1,66 @@
 module.exports = function(grunt) {
 
-  // Project configuration.
   grunt.initConfig({
-    pkg: grunt.file.readJSON('package.json'),
-    uglify: {
-      options: {
-        banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
-      },
-      build: {
-        src: 'src/<%= pkg.name %>.js',
-        dest: 'build/<%= pkg.name %>.min.js'
+    stylus: {
+      compile: {
+        options: {
+          compress: false,
+          'include css': true
+        },
+        files: {
+          'dist/css/styles.css': 'src/css/*.styl'
+        }
       }
+    },
+    autoprefixer: {
+      no_dest_single: {
+        src: 'dist/css/styles.css'
+      }
+    },
+    copy: {
+      main: {
+        src: 'src/index.html',
+        dest: 'dist/index.html'
+      }
+    },
+    browserify: {
+      client: {
+        src: [ 'src/js/index.js' ],
+        dest: 'dist/js/scripts.js'
+      }
+    },
+    uglify: {
+      my_target: {
+        options: {},
+        files: {
+          'dist/js/scripts.js': [ 'dist/js/scripts.js' ]
+        }
+      }
+    },
+    watch: {
+      files: [ 'Gruntfile.js', 'src/index.html', 'src/**/*.js', 'src/**/*.styl' ],
+      tasks: [ 'buildDev' ]
     }
   });
 
-  // Load the plugin that provides the "uglify" task.
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-browserify');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-autoprefixer');
+  grunt.loadNpmTasks('grunt-contrib-stylus');
+  grunt.loadNpmTasks('grunt-contrib-copy');
 
-  // Default task(s).
-  grunt.registerTask('default', ['uglify']);
+  grunt.registerTask('default', [ 'watch' ]);
+
+  grunt.registerTask('buildDev', [
+    'stylus',
+    'autoprefixer',
+    'browserify',
+    'copy'
+  ]);
+  grunt.registerTask('buildProd', [
+    'buildDev',
+    'uglify'
+  ]);
 
 };
