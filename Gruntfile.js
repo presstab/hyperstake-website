@@ -8,13 +8,13 @@ module.exports = function(grunt) {
           'include css': true
         },
         files: {
-          'dist/css/styles.css': 'src/css/*.styl'
+          'dist/css/main.css': 'src/css/*.styl'
         }
       }
     },
     autoprefixer: {
       no_dest_single: {
-        src: 'dist/css/styles.css'
+        src: 'dist/css/main.css'
       }
     },
     copy: {
@@ -25,15 +25,15 @@ module.exports = function(grunt) {
     },
     browserify: {
       client: {
-        src: [ 'src/js/index.js' ],
-        dest: 'dist/js/scripts.js'
+        src: [ 'src/js/plugins.js', 'src/js/main.js' ],
+        dest: 'dist/js/main.js'
       }
     },
     uglify: {
       my_target: {
         options: {},
         files: {
-          'dist/js/scripts.js': [ 'dist/js/scripts.js' ]
+          'dist/js/main.js': [ 'dist/js/main.js' ]
         }
       }
     },
