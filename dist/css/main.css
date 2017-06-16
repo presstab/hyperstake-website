@@ -214,6 +214,43 @@ header ul li a:hover {
 .about #technical ul {
   list-style: initial;
 }
+#community {
+  padding: 50px 0;
+  background: #353535;
+}
+#community h4 {
+  margin: 20px 0 40px;
+  font-size: 36px;
+  color: #fafafa;
+}
+#community li {
+  display: block;
+  margin-bottom: 10px;
+}
+#community li a {
+  font-size: 26px;
+  color: #5eceda;
+}
+#community li a:hover,
+#community li a:focus,
+#community li a:active {
+  color: #fafafa;
+  text-decoration: none;
+}
+#community li a i {
+  min-width: 50px;
+}
+#community p {
+  font-size: 28px;
+  color: #fafafa;
+}
+footer {
+  padding-bottom: 20px;
+  font-size: 13px;
+  color: #fafafa;
+  text-align: center;
+  background: #353535;
+}
 /* ==========================================================================
   Helper classes
   ========================================================================== */
