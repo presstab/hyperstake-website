@@ -101,11 +101,14 @@ header ul li {
   margin-left: 1em;
 }
 header ul li a {
+  padding-bottom: 3px;
   color: #fafafa;
   cursor: pointer;
 }
 header ul li a:hover {
+  color: #fafafa;
   text-decoration: none;
+  border-bottom: 1px solid #fafafa;
 }
 #front-container {
   background: url("../img/hyperstake-top-bg.png") no-repeat center center fixed;
