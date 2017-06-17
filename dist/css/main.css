@@ -333,6 +333,15 @@ footer {
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
 }
 @media (max-width: 660px) {
+  .about {
+    margin-top: 60px;
+  }
+  .about .row {
+    margin-bottom: 70px;
+  }
+  .about #exchanges {
+    margin-bottom: 60px;
+  }
   .current-rates ul {
     max-width: 260px;
     margin: 0 auto;
@@ -343,6 +352,9 @@ footer {
   }
   .current-rates ul .change {
     float: left;
+  }
+  #technical ul {
+    padding-left: 40px;
   }
 }
 @media (min-width: 768px) {
