@@ -139,6 +139,7 @@ header ul li a:hover {
 #front-container .current-rates {
   width: 100%;
   margin: 80px 0 20px;
+  visibility: hidden;
 }
 #front-container .current-rates ul {
   text-align: center;
