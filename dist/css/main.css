@@ -83,12 +83,16 @@ ul {
   Author's custom styles
   ========================================================================== */
 header {
-  padding: 50px 80px 0;
+  display: block;
+  width: 100%;
+  float: left;
+  padding-top: 50px;
 }
 header .logo {
   width: 131px;
   height: 35px;
   float: left;
+  margin: 0;
   background: url("../img/hyperstake-logo.png") no-repeat;
   background-size: 100% 100%;
   text-indent: -9999px;
@@ -116,7 +120,8 @@ header ul li a:hover {
 }
 #front-container .main-text {
   display: block;
-  padding: 8em 120px 5em;
+  padding-top: 8em;
+  padding-bottom: 5em;
 }
 #front-container .main-text h2,
 #front-container .main-text h3 {
@@ -126,14 +131,14 @@ header ul li a:hover {
 }
 #front-container .main-text h2 {
   margin: 20px 0;
-  font-size: 4em;
+  font-size: 2.5em;
 }
 #front-container .main-text h2 span {
   color: #79c4cc;
 }
 #front-container .main-text h3 {
-  margin-top: 40px;
-  font-size: 1.2em;
+  margin-top: 60px;
+  font-size: 1em;
   line-height: 1.5em;
 }
 #front-container .current-rates {
@@ -147,9 +152,23 @@ header ul li a:hover {
 #front-container .current-rates ul li {
   display: inline-block;
   margin-left: 2px;
+  margin-bottom: 5px;
   color: #000;
   background: rgba(250,250,250,0.75);
   border: 1px solid #dedede;
+}
+#front-container .current-rates ul li .change {
+  display: inline-block;
+  padding: 0 4px;
+  margin-left: 0;
+}
+#front-container .current-rates ul li .change.up {
+  color: #006c00;
+  background: #afe6ba;
+}
+#front-container .current-rates ul li .change.down {
+  color: #a60205;
+  background: #f7b7bf;
 }
 #front-container .current-rates ul li.hyp {
   margin-left: 0;
@@ -157,20 +176,6 @@ header ul li a:hover {
   font-weight: bold;
   background: none;
   border: none;
-}
-#front-container .current-rates ul li.change {
-  padding: 0 4px;
-  margin-left: 0;
-}
-#front-container .current-rates ul li.change.up {
-  color: #78e678;
-  background: #008000;
-  border: 1px solid #78e678;
-}
-#front-container .current-rates ul li.change.down {
-  color: #ffdada;
-  background: #ea3a3a;
-  border: 1px solid #f19898;
 }
 #front-container .current-rates ul .price {
   padding-left: 2px;
@@ -180,7 +185,8 @@ header ul li a:hover {
   background: #e3e3e3;
 }
 .about {
-  margin: 90px 0;
+  margin-top: 90px;
+  margin-bottom: 90px;
   color: #111;
 }
 .about .row {
@@ -195,8 +201,8 @@ header ul li a:hover {
   float: left;
 }
 .about .download-links a {
-  width: 64px;
-  height: 64px;
+  width: 32px;
+  height: 32px;
   float: left;
   margin-right: 20px;
 }
@@ -318,13 +324,57 @@ footer {
   clear: both;
 }
 /* ==========================================================================
-  EXAMPLE Media Queries for Responsive Design.
+  Media Queries for Responsive Design.
   These examples override the primary ('mobile first') styles.
   Modify as content requires.
   ========================================================================== */
 @media only screen and (min-width: 35em) {
 }
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
+}
+@media (max-width: 660px) {
+  .current-rates ul {
+    max-width: 260px;
+    margin: 0 auto;
+  }
+  .current-rates ul li {
+    width: 100%;
+    text-align: right;
+  }
+  .current-rates ul .change {
+    float: left;
+  }
+}
+@media (min-width: 768px) {
+  #front-container .main-text {
+    padding-bottom: 3em;
+  }
+  #front-container .main-text h2 {
+    font-size: 3em;
+  }
+}
+@media (min-width: 992px) {
+  #front-container .main-text h3 {
+    padding: 0 120px;
+    margin-top: 40px;
+  }
+  .about .download-links a {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  #front-container .main-text h2 {
+    font-size: 4em;
+  }
+  #front-container .main-text h3 {
+    font-size: 1.2em;
+    padding: 0 200px;
+  }
+  .about .download-links a {
+    width: 64px;
+    height: 64px;
+  }
 }
 /* ==========================================================================
   Print styles.

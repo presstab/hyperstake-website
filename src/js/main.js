@@ -48,6 +48,7 @@ function renderCurrencyValues () {
     $el.find('.change .percentage').html(data.BTC.diff.toFixed(2) + '%');
 
     var isUpOrDown = data.BTC.diff >= 0 ? 'up' : 'down';
+    // var isUpOrDown = data.BTC.diff >= 0 ? 'down' : 'up';
 
     $el.find('.change').addClass(isUpOrDown);
 

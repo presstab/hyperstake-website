@@ -15,17 +15,18 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="js/vendor/modernizr-2.8.3.min.js "></script>
   </head>
-  <body style="display: none;" onload="(function () { document.body.style='display:initial;' })()">
+  <!-- <body style="display: none;" onload="(function () { document.body.style='display:initial;' })()"> -->
+  <body>
     <!--[if lt IE 8]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <div class="site-container">
-      <section id="front-container">
+      <section id="front-container" class="container-fluid">
         <header>
           <h1 class="logo">Hyperstake</h1>
 
-          <nav class="menu">
+          <nav class="menu hidden-xs-down">
             <ul>
               <li><a href="">Community</a></li>
               <li><a href="">Exchanges</a></li>
@@ -50,17 +51,16 @@
                 <span class="price">
                   0.00000091
                 </span>
-                <span class="currency">BTC</span>
+                <span class="currency">BTC</span><span class="change"><span class="percentage"></span> (24h)</span>
               </li>
-              <li class="change">
-                <span class="percentage"></span> (24h)
-              </li>
+              <!-- <li class="usd hidden-xs-down"> -->
               <li class="usd">
                 <span class="price">
                   0.002059
                 </span>
                 <span class="currency">USD</span>
               </li>
+              <!-- <li class="eur hidden-xs-down"> -->
               <li class="eur">
                 <span class="price">
                   0.001832
@@ -74,7 +74,7 @@
 
       <section class="about container">
         <div id="wallets" class="row">
-          <div class="col-lg-6">
+          <div class="col-md-6">
             <h4>Wallets</h4>
             <p>Download our wallets available for Linux, Mac OS, Windows, Raspberry Pi or build it from source. We're open source and available on <a href="https://github.com/hyperstake/HyperStake" target="_blank">Github</a>.</p>
             <div class="download-links">
@@ -85,16 +85,16 @@
               <a href="#" title="Build from source"><img src="img/github-logo.png" alt="Github" /></a>
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-md-6 hidden-sm-down">
             <img src="img/wallet.png" alt="wallet" class="about-vector wallet" />
           </div>
         </div>
 
         <div id="exchanges" class="row">
-          <div class="col-lg-6">
+          <div class="col-md-6 hidden-sm-down">
             <img src="img/exchange.png" alt="exchanges" class="about-vector exchanges" />
           </div>
-          <div class="col-lg-6">
+          <div class="col-md-6">
             <h4>Exchanges</h4>
             <p><strong>HYP</strong> is currently available for trading on <a href="#" target="_blank">Cryptopia</a> and <a href="#" target="_blank">CoinExchange</a>.</p>
             <p>Want to know when it will be available in other exchanges? Please leave your email below:</p>
@@ -110,11 +110,11 @@
         </div>
 
         <div id="technical" class="row">
-          <div class="col-lg-6">
+          <div class="col-md-6">
             <h4>Technical details</h4>
             <div class="clearfix"></div>
             <div class="row">
-              <div class="col-lg-6">
+              <div class="col-md-6">
                 <ul>
                   <li>X11 PoW blocks already phased out</li>
                   <li>Proof of Stake Blocks Only</li>
@@ -122,7 +122,7 @@
                   <li>Annual Interest Rate 750%</li>
                 </ul>
               </div>
-              <div class="col-lg-6">
+              <div class="col-md-6">
                 <ul>
                   <li>Minimum Age 8.8 days</li>
                   <li>Maximum Age 30 days</li>
@@ -132,7 +132,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-md-6 hidden-sm-down">
             <img src="img/technical.png" alt="exchanges" class="about-vector exchanges" />
           </div>
         </div>
@@ -142,7 +142,7 @@
         <div class="container">
           <h4>Community</h4>
           <div class="row">
-            <div class="col-lg-6">
+            <div class="col-md-6">
               <ul>
                 <li>
                   <a href="https://hyperstake.herokuapp.com" target="_blank">
@@ -176,7 +176,7 @@
                 </li>
               </ul>
             </div>
-            <div class="col-lg-6">
+            <div class="col-md-6">
               <p>Join our growing and enthusiastic community that believe and support the project. Together <span class="blue-text">we are stronger</span>.</p>
             </div>
           </div>

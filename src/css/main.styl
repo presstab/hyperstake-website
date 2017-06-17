@@ -98,12 +98,16 @@ ul
   ========================================================================== */
 
 header
-  padding 50px 80px 0
+  display block
+  width 100%
+  float left
+  padding-top 50px
 
   .logo
     width 131px
     height 35px
     float left
+    margin 0
     background url('../img/hyperstake-logo.png') no-repeat
     background-size 100% 100%
     text-indent -9999px
@@ -134,7 +138,8 @@ header
 
   .main-text
     display block
-    padding 8em 120px 5em
+    padding-top 8em
+    padding-bottom 5em
 
     h2
     h3
@@ -144,14 +149,14 @@ header
 
     h2
       margin 20px 0
-      font-size 4em
+      font-size 2.5em
 
       span
         color rgb(121, 196, 204)
 
     h3
-      margin-top 40px
-      font-size 1.2em
+      margin-top 60px
+      font-size 1em
       line-height 1.5em
 
   .current-rates
@@ -165,9 +170,23 @@ header
       li
         display inline-block
         margin-left 2px
+        margin-bottom 5px
         color #000
         background rgba(250, 250, 250, 0.75)
         border 1px solid #DEDEDE
+
+        .change
+          display inline-block
+          padding 0 4px
+          margin-left 0
+
+        .change.up
+          color #006C00
+          background #AFE6BA
+
+        .change.down
+          color #A60205
+          background #F7B7BF
 
       li.hyp
         margin-left 0
@@ -175,20 +194,6 @@ header
         font-weight bold
         background none
         border none
-
-      li.change
-        padding 0 4px
-        margin-left 0
-
-      li.change.up
-        color #78E678
-        background green
-        border 1px solid #78E678
-
-      li.change.down
-        color #FFDADA
-        background #EA3A3A
-        border 1px solid #F19898
 
       .price
         padding-left 2px
@@ -199,7 +204,8 @@ header
 
 
 .about
-  margin 90px 0
+  margin-top 90px
+  margin-bottom 90px
   color #111
 
   .row
@@ -214,8 +220,8 @@ header
     float left
 
     a
-      width 64px
-      height 64px
+      width 32px
+      height 32px
       float left
       margin-right 20px
 
@@ -352,7 +358,7 @@ footer
 
 
 /* ==========================================================================
-  EXAMPLE Media Queries for Responsive Design.
+  Media Queries for Responsive Design.
   These examples override the primary ('mobile first') styles.
   Modify as content requires.
   ========================================================================== */
@@ -365,6 +371,56 @@ footer
   (min-resolution 1.25dppx),
   (min-resolution 120dpi)
     font-size 1em
+
+@media (max-width: 660px)
+  .current-rates
+    ul
+      max-width 260px
+      margin 0 auto
+
+      li
+        width 100%
+        text-align right
+
+      .change
+        float left
+
+@media (min-width: 768px)
+  #front-container
+    .main-text
+      padding-bottom 3em
+
+      h2
+        font-size 3em
+
+@media (min-width: 992px)
+  #front-container
+    .main-text
+      h3
+        padding 0 120px
+        margin-top 40px
+
+  .about
+    .download-links
+      a
+        width 40px
+        height 40px
+
+@media (min-width: 1200px)
+  #front-container
+    .main-text
+      h2
+        font-size 4em
+
+      h3
+        font-size 1.2em
+        padding 0 200px
+
+  .about
+    .download-links
+      a
+        width 64px
+        height 64px
 
 /* ==========================================================================
   Print styles.
@@ -442,4 +498,3 @@ footer
   h2,
   h3
     page-break-after avoid
-
