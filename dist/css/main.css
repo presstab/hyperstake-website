@@ -209,6 +209,11 @@ header ul li a:hover {
 .about .download-links a img {
   max-width: 100%;
 }
+.about img.why-vector {
+  display: block;
+  width: 360px;
+  margin: 0 auto;
+}
 .about img.about-vector {
   display: block;
   width: 240px;
