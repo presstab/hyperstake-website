@@ -205,6 +205,7 @@
 		box-sizing: border-box;
 	}
 
+
 	.row:after, .row:before {
 		content: '';
 		display: block;
@@ -1874,7 +1875,7 @@
 		#banner .button {
 			margin-top: 0.50em;
 		}
-
+/*
 	#devices {
 		position: relative;
 		height: 20.4em;
@@ -1897,7 +1898,7 @@
 		left: 0.8em;
 		padding: 1.5em 0.6em 1.3em 0.6em;
 		background: url(images/phone.png) no-repeat center top;
-		z-index: 1;
+		z-index: 1;*/
 	}
 
 /* Wrapper */
@@ -1999,13 +2000,18 @@
 
 		#extra ul {
 			overflow: hidden;
-			background: #282729;
-			border-radius: 6px;
+			/*background: #282729;
+			border-radius: 6px;*/
 		}
 
 			#extra ul li {
 				display: inline-block;
 				float: left;
+				width: 50%;
+			}
+				#rachel {
+				display: inline-block;
+				float: right
 				width: 50%;
 			}
 
@@ -2224,7 +2230,7 @@
 		width: 552px;
 		height: 326px;
 		padding: 26px 60px 35px 60px;
-		background: url(images/laptop.png) no-repeat center bottom;
+		/*background: url(images/laptop.png) no-repeat center bottom;*/
 		background-size: auto 100%;
 	}
 
