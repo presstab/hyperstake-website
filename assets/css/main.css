@@ -2229,7 +2229,7 @@
 		z-index: 2;
 		width: 552px;
 		height: 326px;
-		padding: 26px 60px 35px 60px;
+		padding: 26px 26px 35px 60px;
 		/*background: url(images/laptop.png) no-repeat center bottom;*/
 		background-size: auto 100%;
 	}
@@ -2239,11 +2239,16 @@
 		bottom: 0;
 		left: 0;
 		z-index: 11;
-		width: 100px;
-		height: 175px;
-		padding: 26px 8px 0px 8px;
-		background: url(images/phone.png) no-repeat center bottom;
+		width: 200px;
+		height: 200px;
+		padding: 8px 8px 0px 8px;
+/*		background: url(images/phone.png) no-repeat center bottom;*/
 		background-size: auto 100%;
+	}
+
+	#box4 {
+		position: relative;
+		height: 200px;
 	}
 
 /* Normal */
