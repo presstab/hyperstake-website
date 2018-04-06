@@ -1425,7 +1425,15 @@
 	.row > section, .row > article {
 		margin-bottom: 0;
 	}
+		.desktop {
+		   display: block;
 
+			width: 100%;
+		}
+		.mobile {
+		   display: none;
+		   width: 100%;
+		}
 /* Images */
 
 	.image {
@@ -2436,6 +2444,13 @@
 				right: 0;
 				top: 0;
 			}
+					.desktop{
+					display: none;
+				}
+
+			.mobile {
+			   display: block;
+			}	
 
 			.dropotron.level-0 {
 				margin-top: 1.4em;
@@ -2505,6 +2520,7 @@
 			form {
 				width: 100%;
 			}
+		
 
 		/* Lists */
 
@@ -2736,7 +2752,7 @@
 		display: none;
 	}
 
-	@media screen and (max-width: 736px) {
+	@media screen and (max-width: 960px) {
 
 		/* Basic */
 
