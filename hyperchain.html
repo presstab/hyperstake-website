@@ -61,7 +61,7 @@
 									<center><img src="images/hypchain-logo.gif" alt="" class="image full" />
 									</center>
 								
-										<p>HyperChain provides the ability to securely communicated between devices connected to the HyperStake network. Secure communication can occur between single users or between and single user and a group. HyperChain provides a platform for users to create channels that broadcast signals and data into HyperStake's blockchain. By using security provided by ECDSA Secp256k1 public/private key cryptography, it is clear that communcations are coming from a device that is whitelisted (approved to broadcast from a channel).  </p>
+										<p>HyperChain provides the ability to securely communicate between devices connected to the HyperStake network. Secure communication can occur between single users or between and single user and a group. HyperChain provides a platform for users to create channels that broadcast signals and data into HyperStake's blockchain. By using security provided by ECDSA Secp256k1 public/private key cryptography, it is clear that communications are coming from a device that is whitelisted (approved to broadcast from a channel).  </p>
 
 										<p> HyperChain uses the concept of subscribing to signals. Signals are commands that are sent to a HyperChain address on the HyperStake network. By subscribing to a signal, a node simply watches for transactions sent to a specific address, sees if the command was sent and cryptographically signed by a whitelisted node, and finally checks if the command is one that is recognized and approved. If the command sent to the channel is recognized by the device monitoring the channel, then the device will respond by running an external script or operation. </p>
 
@@ -129,5 +129,14 @@
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 
+  <!-- Google Analytics -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-101023108-1','auto');ga('send','pageview');
+    </script>
 	</body>
 </html>
