@@ -1492,6 +1492,7 @@
 			margin-top: 0.4em;
 		}
 
+	
 	ul.default {
 		list-style: none;
 		margin: 0;
@@ -1696,7 +1697,7 @@
 		display: inline-block;
 		border: 0;
 		padding: 0em 1.25em;
-		background: #5ea2c5;
+		background: #436a84;
 		border-radius: 5px;
 		line-height: 2.65em;
 		text-decoration: none;
@@ -1708,8 +1709,34 @@
 	}
 
 		.button:hover {
-			background: #ca4047;
+			background: #79c4cc;
 		}
+
+	.button1 {
+			-moz-transition: background-color 0.25s ease-in-out;
+			-webkit-transition: background-color 0.25s ease-in-out;
+			-ms-transition: background-color 0.25s ease-in-out;
+			transition: background-color 0.25s ease-in-out;
+			position: relative;
+			display: inline-block;
+			border: 0;
+			padding: 0em 1.25em;
+			background: #436a84;
+			border-radius: 5px;
+			line-height: 2.65em;
+			text-decoration: none;
+			text-align: center;
+			font-size: .75em;
+			font-weight: 500;
+			color: #fff;
+			cursor: pointer;
+		}
+
+			.button:hover {
+				background: #79c4cc;
+			}
+
+		
 
 /* Icons */
 
@@ -1734,7 +1761,7 @@
 /* Header */
 
 	#header {
-		position: relative;
+		position: absolute;
 		padding: 2.5em 0em;
 	}
 
@@ -1850,7 +1877,7 @@
 
 	#banner {
 		position: relative;
-		padding: 5em 0em;
+		padding: 3em 0em;
 		border-top: 1px solid #302e30;
 		color: #fff;
 	}
@@ -1911,7 +1938,7 @@
 
 	.homepage #wrapper {
 		padding: 0em 0em 3em 0em;
-		background: #181719 url(images/bg01.png) repeat-x;
+		background: #181719 /*url(images/bg01.png) repeat-x;*/
 	}
 
 /* Main */
@@ -1963,7 +1990,7 @@
 
 	#featured {
 		position: relative;
-		padding-top: 5em;
+		padding-top: 2em;
 		border-top: 1px solid #302e31;
 	}
 
@@ -2250,6 +2277,8 @@
 		position: relative;
 		height: 200px;
 	}
+
+
 
 /* Normal */
 
@@ -2783,6 +2812,7 @@
 
 			#header {
 				padding: 4.5em 0em 3.5em 0em;
+				background-color: red;
 			}
 
 			#logo h1 a {
@@ -2848,7 +2878,7 @@
 
 			.homepage #wrapper {
 				padding: 0em 0em 3em 0em;
-				background: #181719 url(images/bg01.png) repeat-x;
+				background-color: #181719;
 			}
 
 		/* Main */
