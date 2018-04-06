@@ -973,7 +973,7 @@ lib.properties = {
 	id: 'BBBFAC8EFC02014899E7C31F024C505C',
 	width: 1500,
 	height: 563,
-	fps: 24,
+	fps: 60,
 	color: "#181719",
 	opacity: 1.00,
 	manifest: [
