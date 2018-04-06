@@ -2812,7 +2812,8 @@
 
 			#header {
 				padding: 4.5em 0em 3.5em 0em;
-				background-color: #181719;
+				background-color: none;
+				display: none;
 			}
 
 			#logo h1 a {
@@ -2921,7 +2922,7 @@
 		/* Extra #1 */
 
 			#extra .content {
-				padding: 3em 2.2em 3.5em 2.2em;
+				padding: 1em 2.2em 1em 2.2em;
 			}
 
 			#extra .button {
@@ -2949,10 +2950,10 @@
 				text-align: center;
 			}
 
-				#extra2 header {
-					margin-bottom: 0;
-					padding-right: 0;
-				}
+			#extra2 header {
+				margin-bottom: 0;
+				padding-right: 0;
+			}
 
 		/* Newsletter */
 
