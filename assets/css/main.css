@@ -16,6 +16,7 @@
 		font-size: 100%;
 		font: inherit;
 		vertical-align: baseline;
+		color: #fff;
 	}
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -55,7 +56,18 @@
 		-webkit-box-sizing: border-box;
 		box-sizing: border-box;
 	}
+article p {
+font-size: 14pt;
+color: #FFF;
+text-align: justify;
 
+}
+
+article b {
+	font-size: 16pt;
+	color:#FFF;
+	font-weight: 600
+}
 /* Containers */
 
 	.container {
@@ -238,7 +250,7 @@
 	}
 
 	.row > * {
-		padding: 40px 0 0 40px;
+		padding: 40px  0 40px;
 	}
 
 	.row {
@@ -1311,7 +1323,7 @@
 /* Basic */
 
 	body {
-		background: #212022;
+		background: #181719;
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 13pt;
 		font-weight: 300;
@@ -1401,7 +1413,7 @@
 			display: block;
 			margin: 0.8em 0 0 0;
 			padding: 0 0 0.5em 0;
-			color: #777777;
+			color: #FFF;
 		}
 
 	footer {
@@ -1770,7 +1782,9 @@
 
 	#header {
 		position: absolute;
-		padding: 2.5em 0em;
+		padding: 2.5em 0em 0em 6em;
+		margin: 0 auto;
+
 	}
 
 		#header .container {
@@ -1946,7 +1960,7 @@
 
 	.homepage #wrapper {
 		padding: 0em 0em 3em 0em;
-		background: #181719 /*url(images/bg01.png) repeat-x;*/
+		background: #181719 
 	}
 
 /* Main */
@@ -1967,7 +1981,7 @@
 
 	#content header .byline {
 		font-size: 1.4em;
-		color: #a7a7a7;
+		color: #fff;
 	}
 
 	#content h3 {
@@ -2000,6 +2014,8 @@
 		position: relative;
 		padding-top: 2em;
 		border-top: 1px solid #302e31;
+
+
 	}
 
 		#featured .image-border {
@@ -2581,6 +2597,7 @@
 				left: 0em;
 				top: 4em;
 				right: 0;
+				text-align: right;
 			}
 
 				#nav > ul {
@@ -3191,4 +3208,9 @@
 				transform: translateX(0);
 			}
 
+	}
+
+	section ul li p b{
+				color: #fff;
+		font-size: 14pt
 	}

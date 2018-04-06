@@ -42,7 +42,7 @@
 
 					</div>
 				</div>
-
+				<br><br><br><br>
 			<!-- Wrapper -->
 				<div id="wrapper">
 
@@ -58,11 +58,20 @@
 									
 										
 									
-									<div id="box1">
-										<div id="box4"><img src="images/hypchain-logo.gif" alt="" class="image full" /></div>
-									</div>
+									<center><img src="images/hypchain-logo.gif" alt="" class="image full" />
+									</center>
 								
-										<p>HyperChain provides the ability to securely communicated between devices connected to the HyperStake network. Secure communication can occur between single users or between groups. HyperChain provides a platform for users to create channels that broadcast signals and data into HyperStake's blockchain. By using security provided by ECDSA Secp256k1 public/private key cryptography, it is clear that communcations are coming from a device that is whitelisted (approved to broadcast from a channel).  </p>
+										<p>HyperChain provides the ability to securely communicated between devices connected to the HyperStake network. Secure communication can occur between single users or between and single user and a group. HyperChain provides a platform for users to create channels that broadcast signals and data into HyperStake's blockchain. By using security provided by ECDSA Secp256k1 public/private key cryptography, it is clear that communcations are coming from a device that is whitelisted (approved to broadcast from a channel).  </p>
+
+										<p> HyperChain uses the concept of subscribing to signals. Signals are commands that are sent to a HyperChain address on the HyperStake network. By subscribing to a signal, a node simply watches for transactions sent to a specific address, sees if the command was sent and cryptographically signed by a whitelisted node, and finally checks if the command is one that is recognized and approved. If the command sent to the channel is recognized by the device monitoring the channel, then the device will respond by running an external script or operation. </p>
+
+										<p> Signals can be sent by anyone, and to any channel. The subscribing node decides which signals they watch for, and who they require to send the signal. If the signal is sent by a device that is not whitelisted, then the signal is ignored. </p>
+
+										<p>HyperChain allows a network of devices (nodes) to be run, monitored, or controlled without the need to connect to each individual node using ports. Given that a node is actively running HyperStake, they will be able to monitor HyperChain for communications that have been securely sent to an address that the node is subscribed to. The ability to subscribe to signals on HyperChain not only streamlines communicating with a single node or device, but also gives the ability to have an entire network of devices monitoring a channel to perform operations based off of the same command at the same time, which means the creator of the signal would only need to create and send the signal once and still can effectively have sent that signal to a range of devices.</p>
+
+
+
+
 									
 										<br><br>
 									</article>
@@ -74,8 +83,8 @@
 
 	
 					<!-- Featured -->
-						<div id="featured" class="container">
-							<div class="row">
+						<div style="background-color: #212022; width: 100%;" >
+							<div class="row" >
 
 								<section class="4u 12u(narrower)">
 									<p class="padding"> </p>
@@ -86,7 +95,7 @@
 								<section class="8u 12u(narrower)">
 									<ul class="list">
 										<li>
-											<p><b>Follow HyperStake on Twitter</b></p>
+											<p><b ">Follow HyperStake on Twitter</b></p>
 											
 											<a href="https://twitter.com/HyperStake" target="_blank" class="button1">Follow</a>
 										</li>
@@ -110,69 +119,7 @@
 
 							</div>
 						</div>
-			<!-- Footer -->
-				<!-- <div id="footer">
-					<div class="container"> -->
-
-						<!-- Footer List -->
-							<!-- <div id="contact">
-								<ul class="style4">
-									<li>
-										<div class="p-icon">
-											<span class="fa fa-cog"></span>
-										</div>
-										<span>
-											1234 Fictional Road Suite<br />
-											#789 Nashville, TN 00000
-										</span>
-									</li>
-									<li>
-										<div class="p-icon">
-											<span class="fa fa-anchor"></span>
-										</div>
-										<span><a href="#">info@untitled.com</a><br />
-										<a href="#">contact@untitled.com</a></span>
-									</li>
-									<li>
-										<div class="p-icon">
-											<span class="fa fa-user"></span>
-										</div>
-										<span>(000) 555-555-5555<br /> (000) 888-888-8888</span>
-									</li>
-									<li>
-										<div class="p-icon">
-											<span class="fa fa-envelope"></span>
-										</div>
-										<span><a href="#">@untitled-corp</a><br />
-										<a href="#">facebook.com/untitled-corp</a></span>
-									</li>
-								</ul>
-							</div> -->
-
-						<!-- Newsletter -->
-							<!-- <div id="newsletter">
-								<div class="row">
-									<section class="6u 12u(narrower)">
-										<span>Fusce lobortis lorem at ipsum semper sagittis sui unteconvil sitamet interdium</span>
-									</section>
-									<section class="6u 12u(narrower)">
-										<form method="post" action="#" id="subscribe">
-											<input type="text" class="text" name="search" placeholder="Your email address" />
-											<a href="#" class="submit">Subscribe</a>
-										</form>
-									</section>
-								</div>
-							</div> -->
-
-						<!-- Copyright -->
-							<!-- <div id="copyright">
-								&copy; Untitled. All rights Reserved
-							</div>
-
-					</div>
-				</div>
-
-		</div> -->
+			
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
