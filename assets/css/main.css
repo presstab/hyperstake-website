@@ -1730,6 +1730,8 @@ article b {
 
 		.button:hover {
 			background: #79c4cc;
+			color: black;
+			
 		}
 
 	.button1 {
@@ -1752,8 +1754,11 @@ article b {
 			cursor: pointer;
 		}
 
-			.button:hover {
+			.button1:hover {
 				background: #79c4cc;
+				color: black;
+				font-weight: 800;
+
 			}
 
 		
@@ -1976,7 +1981,7 @@ article b {
 /* Content */
 
 	#content header h2 {
-		font-size: 2.5em;
+		font-size: 2em;
 	}
 
 	#content header .byline {
@@ -2062,7 +2067,7 @@ article b {
 			}
 				#rachel {
 				display: inline-block;
-				float: right
+				float: right;
 				width: 50%;
 			}
 
@@ -2472,6 +2477,25 @@ article b {
 				margin-top: 1.4em;
 			}
 
+			#nav > ul {
+					text-align: center;
+				}
+
+					#nav > ul > li {
+						float: none;
+						display: inline-block;
+					}
+
+						#nav > ul > li:last-child {
+							padding-right: 0;
+						}
+
+						#nav > ul > li > a, #nav > ul > li > span {
+							display: block;
+						}
+
+			
+
 		/* Banner */
 
 			#mobile {
@@ -2502,6 +2526,9 @@ article b {
 			#extra .button {
 				margin-top: 0em;
 			}
+			
+
+
 
 		/* Device Image */
 
@@ -2703,11 +2730,16 @@ article b {
 					display: block;
 					float: none;
 					width: 100%;
+
 				}
+
 
 				#extra ul img {
 					border-radius: 6px 6px 0px 0px;
+
 				}
+
+		
 
 		/* Extra #2 */
 
@@ -2769,7 +2801,7 @@ article b {
 		display: none;
 	}
 
-	@media screen and (max-width: 960px) {
+	@media screen and (max-width: 1080px) {
 
 		/* Basic */
 
@@ -2975,6 +3007,8 @@ article b {
 				#extra ul img {
 					border-radius: 6px 6px 0px 0px;
 				}
+
+
 
 		/* Extra #2 */
 
